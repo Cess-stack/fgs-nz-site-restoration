@@ -18,17 +18,19 @@ This repo contains the restored and rebuilt WordPress site for Fo Guang Shan NZ.
 
 [Visit the restored site](https://fgs.alankan.ne)
 
-## 📚 Supporting Docs
+### 📚 Supporting Documentation
 
-All supporting materials are located in the /docs folder:
-Written Report.pdf – answers to all 12 questions + final reflections
-Final Presentation Slides.pdf – board-ready with speaker notes
-Notion QA Tracker.pdf – device testing, layout fixes, accessibility notes
-10 Week Plan Updated.pdf – final roadmap
-10 Week Summary.pdf – project overview
-Blockers.pdf – key challenges and resolutions
-Events Setup.pdf – CPT + shortcode logic
-Learning Log.pdf – technical growth and reflections
+All supporting materials are located in the `/docs` folder:
+
+- **Written Report.pdf** – answers to all 12 questions + final reflections  
+- **Final Presentation Slides.pdf** – board-ready with speaker notes  
+- **Notion QA Tracker.pdf** – device testing, layout fixes, accessibility notes  
+- **10 Week Plan Updated.pdf** – final roadmap  
+- **10 Week Summary.pdf** – project overview  
+- **Blockers.pdf** – key challenges and resolutions  
+- **Events Setup.pdf** – CPT + shortcode logic  
+- **Learning Log.pdf** – technical growth and reflections
+
 
 ## 🧱 Tech Stack
 
