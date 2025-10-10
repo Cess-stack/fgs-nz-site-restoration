@@ -1,0 +1,158 @@
+/* CONTACT PAGE WRAPPER */
+.contact-page {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: #3b2c2c;
+}
+
+/* COVER BLOCK */
+.contact-cover {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-cover p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/*  COLUMNS WRAPPER */
+.contact-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* INDIVIDUAL TEMPLE BLOCKS */
+.temple-auckland,
+.temple-christchurch {
+  flex: 1 1 400px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* COLOR BAR ACCENTS */
+.temple-auckland::before,
+.temple-christchurch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.temple-auckland::before {
+  background-color: #AA9387; /* Auckland */
+}
+
+.temple-christchurch::before {
+  background-color: #8EA3B5; /* Christchurch */
+}
+
+/*️ HEADINGS */
+.temple-auckland h3,
+.temple-christchurch h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+  position: relative;
+}
+
+.temple-auckland h3::after,
+.temple-christchurch h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #b58a7a;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* TEMPLE DETAILS */
+.temple-details {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.temple-details p {
+  margin-bottom: 0.5rem;
+}
+
+/*  SHOW ON MAP LINK */
+.temple-details a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #a05a4c;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.temple-details a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT FORM SECTION */
+.contact-form-section {
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d2d2d;
+}
+
+.contact-form-section .wpforms-submit-container input[type="submit"] {
+  background-color: #975D3A;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+  .contact-columns {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .temple-auckland,
+  .temple-christchurch {
+    width: 100%;
+    padding: 1.75rem;
+  }
+
+  .contact-page {
+    padding: 3rem 1.25rem;
+  }
+}

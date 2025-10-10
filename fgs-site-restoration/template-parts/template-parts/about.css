@@ -1,0 +1,591 @@
+/* ================================
+   ABOUT US PAGE CUSTOM STYLES
+   Updated: Oct 4, 2025
+   Author: Celesse Taplin
+================================ */
+
+/* ================================ GLOBAL LAYOUT ================================ */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.page-content {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 267px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 0 32px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .page-content {
+    padding: 0 40px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .about-page {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    padding: 0 24px;
+  }
+
+  .section {
+    padding: 32px 0;
+  }
+
+  .about-page {
+    gap: 32px;
+  }
+}
+
+/* ================================
+   Hero / Banner
+   ================================ */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px 0;
+  min-height: 740px;
+}
+
+.banner-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 267px;
+  width: 100%;
+  max-width: 1192px;
+}
+
+.our-story {
+  font-family: 'Lato', sans-serif;
+  font-size: 63px;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+  width: 266px;
+}
+
+
+.calligraphy-gallery-section {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calligraphy-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1192px;
+  width: 100%;
+}
+
+.calligraphy-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   Hero / Banner
+   ================================ */
+
+.in-page-nav {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 68px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.in-page-nav .space-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  padding: 8px 0;
+  background-color: white; /* Figma token */
+  box-shadow: inset 0 -1px 0 #F5F5F5;
+  opacity: 0.95;
+}
+
+.in-page-nav .label-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 8px 0;
+  height: auto; /* Remove fixed height */
+}
+
+.label-group a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+}
+
+.label-group img {
+  display: block;
+  margin: 0 auto 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.label-group a:hover {
+  color: #AA9387; /* FGS accent color */
+}
+
+/* ================================
+   ICON / INFO CARDS
+   ================================ */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+.icon-card {
+  flex: 1 1 300px; /* responsive: min 300px wide */
+  max-width: 350px;
+  text-align: center;
+}
+
+.icon-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.icon-card img {
+  width: 100%;
+  height: 220px;         /* fixed height for consistency */
+  object-fit: cover;     /* crop evenly */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.icon-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;      /* cleaner reading */
+  margin: 0;
+}
+
+/* ================================
+   Humanistic Buddhism Section
+   ================================ */
+
+.buddhism-section {
+  padding: 4rem 2rem; /* top and bottom breathing space */
+  background-color: #fff; /* match Figma background */
+  text-align: center;
+}
+
+/* Section heading */
+.buddhism-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+/* Layout grid for cards */
+.buddhism-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Each card */
+.buddhism-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 376px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Rectangle images — uniform size */
+.buddhism-card img {
+  width: 100%;
+  height: 220px;           /* lock consistent rectangle */
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;     /* spacing between image & text */
+}
+
+/* Headings under each image */
+.buddhism-card h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;      /* ~20px */
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+/* Paragraphs */
+.buddhism-card p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 90%;          /* improved readability */
+  margin: 8px auto 0 auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .buddhism-heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .buddhism-card img {
+    height: 180px;
+  }
+
+  .buddhism-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================================
+   VENERABLE MASTER HSING YUN
+   ================================ */
+.hsing-yun-section {
+  justify-content: center;
+  align-items: center;
+  padding: 48px 40px; /* less top/bottom, gentle side padding */
+  gap: 44px; /* spacing between title and content */
+  background-color: #2E2E2E;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hsing-yun-title {
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #F5F5F5;
+  text-align: center;
+  max-width: 620px;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+
+.hsing-yun-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 48px; /* slightly larger spacing between image and text */
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.hsing-yun-photo {
+  width: 784px;
+  height: auto;
+  max-height: 1220px; /* slightly taller than Figma */
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hsing-yun-text {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+  color: #E6E6E6;
+  text-align: left;
+}
+
+.hsing-yun-text p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .hsing-yun-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hsing-yun-photo {
+    width: 90%;
+  }
+
+  .hsing-yun-
+
+
+/* ================================
+   CALLIGRAPHY GALLERY
+   ================================ */
+.calligraphy-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+.calligraphy-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   WORLD MAP
+   ================================ */
+.fgs-world-wide-section {
+  background-color: #121212;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.fgs-world-wide-title {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  width: 724px;
+}
+
+.fgs-world-map-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1764px;
+}
+
+/* ================================
+   TEMPLE LOCATION ROW
+   ================================ */
+.location-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+}
+
+.location-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  margin-bottom: 12px;
+}
+
+.location-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .location-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-card {
+    width: 100%;
+  }
+
+  .location-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* ================================
+   SPACING FIXES FOR ABOUT PAGE
+================================ */
+.about-page {
+  gap: 0; /* remove extra vertical spacing between sections */
+}
+
+.section {
+  padding: 40px 0; /* tighten section spacing globally */
+}
+
+/* ================================
+   IN-PAGE NAV ADJUSTMENT
+================================ */
+.in-page-nav {
+  margin-bottom: 0; /* no gap below nav */
+}
+
+/* ================================
+   BROWN BANNER (Hero Section)
+================================ */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #7C584C; /* brown background to match Figma */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 740px; /* fixed like Figma */
+  margin-top: 0;
+  margin-bottom: 40px; /* small breathing space before next section */
+  padding: 0; /* remove extra padding */
+}
+
+.banner-cover {
+  width: 100%;
+  max-width: 1192px;
+  padding: 0;
+}
+
+.banner .our-story {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff; /* white text over brown background */
+  margin: 0;
+}
+
+/* ================================
+   TEMPLE CARD SPACING
+================================ */
+.icon-row {
+  margin-top: 20px; /* bring it closer to banner */
+  margin-bottom: 60px;
+}
+
+/* ================================
+   RESPONSIVE TIGHTENING
+================================ */
+@media (max-width: 428px) {
+  .page-content {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 24px 0;
+  }
+
+  .about-page {
+    gap: 24px;
+  }
+
+  .banner {
+    height: 420px;
+    padding: 16px;
+  }
+
+  .banner .our-story {
+    font-size: 36px;
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .icon-card img,
+  .buddhism-card img {
+    height: 160px;
+  }
+
+  .hsing-yun-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hsing-yun-photo {
+    width: 100%;
+    max-height: 480px;
+  }
+
+  .hsing-yun-text {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  .fgs-world-wide-title {
+    font-size: 32px;
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .location-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .location-card p {
+    font-size: 0.85rem;
+  }
+}

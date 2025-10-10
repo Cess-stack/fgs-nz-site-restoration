@@ -1,0 +1,94 @@
+/* ============================== */
+/* 🎨 Our Art Galleries Section   */
+/* ============================== */
+
+.body {
+  background-color: pink;
+}
+
+/* Section Wrapper */
+.art-galleries-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px; /* more balanced vertical spacing */
+  gap: 24px;
+  max-width: 1192px;
+  margin: 0 auto;
+  text-align: center; /* center-align content for clean symmetry */
+}
+
+/* Section Title */
+.art-galleries-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600; /* slightly bolder for visibility */
+  font-size: 42px; /* smaller for better scale balance */
+  line-height: 56px;
+  color: #2E2E2E;
+  margin-bottom: 0.5rem;
+}
+
+/* Description Paragraph */
+.art-galleries-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  color: #6f6f6f; /* softer grey for readability */
+  max-width: 800px;
+  text-align: center; /* matches visual balance in figma */
+  margin-bottom: 2rem;
+}
+
+/* Region Headings Row */
+.art-galleries-row {
+  display: flex;
+  justify-content: center; /* center instead of flex-start for symmetry */
+  flex-wrap: wrap; /* ensures responsiveness */
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+
+/* Individual Region Heading */
+.art-gallery-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px; /* smaller for hierarchy below section title */
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: #2E2E2E;
+  padding: 0 20px; /* removed huge horizontal padding */
+}
+
+/* =============================== */
+/* 📸 Carousel Layout (Gutenberg-Compatible) */
+/* =============================== */
+
+.art-gallery-carousel .wp-block-group {
+  width: calc(33.333% - 20px);
+  min-width: 280px;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.art-gallery-carousel .wp-block-group:hover {
+  transform: translateY(-4px);
+}
+
+.art-gallery-carousel img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.art-gallery-carousel .wp-block-paragraph {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #555;
+  padding: 12px 14px;
+  text-align: center;
+}
